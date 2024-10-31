@@ -1,0 +1,210 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #c275fe;
+}
+
+.box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    position: relative;
+    text-align: left;
+}
+
+.p {
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form input {
+    border: none;
+    width: 300px;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.changeButton {
+    margin-top: 30px;
+    border: none;
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.deleteBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 60px;
+    position: relative;
+}
+
+.deleteBox p {
+    color: white;
+    font-size: 1.2rem;
+    width: 150px;
+    text-align: center;
+}
+
+.deleteBox button {
+    margin-top: 10px;
+    border: none;
+    width: 80px;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+    max-width: 360px;
+    position: absolute;
+    left: -300px;
+    top: 200px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.inactive {
+    display: none;
+}
+
+.item {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    font-family: monospace;
+    font-size: 1.4rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active1 {
+    background-color: #a544f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 435px;
+    height: 200px;
+    align-items: center;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.active1 button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.inactive1 {
+    display: none;
+}
+
+.item1 {
+    font-family: monospace;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.show {
+    position: absolute;
+    height: 28px;
+    width: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    top: 202px;
+    left: 390px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.active2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 450px;
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    opacity: 0.85;
+    border-radius: 50px;
+    background-color: #c275fe;
+    z-index: 1;
+}
+
+.inactive2 {
+    display: none;
+}
+
+.item2 {
+    font-family: monospace;
+    font-size: 3rem;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .active {
+        top: 350px;
+        left: 20px;
+    }
+    .item {
+        width: 250px;
+    }
+    .active2 {
+        width: 425px;
+        left: 30px;
+    }
+}

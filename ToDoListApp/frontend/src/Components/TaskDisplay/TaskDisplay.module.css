@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #c275fe;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    border-radius: 50px;
+    background-color: #c275fe;
+    margin: 10px 0;
+    min-height: 420px;
+}
+
+.box h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box ol {
+    list-style-type: none;
+    text-align: left;
+}
+
+.box li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: black;
+    background-color: white;
+    width: 600px;
+    margin: 20px 0;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+    font-family: sans-serif;
+    padding: 20px 10px;
+}
+
+.taskBox {
+    flex: 1;
+}
+
+.doneBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.taskBox h5 {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    overflow-wrap: break-word
+}
+
+.taskBox h2 {
+    font-family: sans-serif;
+    font-size: 2.2rem;
+    overflow-wrap: break-word;
+    max-width: 460px;
+}
+
+.taskBox p {
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    width: 450px;
+}
+
+li button {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #fe0000;
+    cursor: pointer;
+}
+
+.doneBox input {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .box li {
+        width: 350px;
+    }
+
+    .taskBox {
+        flex: 1;
+        width: 220px;
+    }
+
+    .taskBox h2 {
+        font-size: 1.6rem;
+    }
+
+    .taskBox p {
+        font-size: 1.4rem;
+        width: 220px;
+    }
+
+    .taskBox h5 {
+        font-size: 1.2rem;
+    }
+
+    li button {
+        width: 80px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .doneBox input {
+        width: 20px;
+        height: 20px;
+    }
+
+}

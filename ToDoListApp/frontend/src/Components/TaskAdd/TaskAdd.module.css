@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #c275fe;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    border-radius: 50px;
+    background-color: #c275fe;
+    margin: 10px 0;
+    position: relative;
+}
+
+.box h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.box input {
+    font-size: 2.4rem;
+    border: none;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.box textarea {
+    border-radius: 6px;
+    resize: none;
+    font-size: 1.9rem;
+    font-family: sans-serif;
+}
+
+.box button {
+    margin-top: 37px;
+    border: none;
+    color: black;
+    width: 190px;
+    height: 50px;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.box button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    display: block;
+    max-width: 300px;
+    position: absolute;
+    left: -340px;
+    top: 195px;
+}
+
+.inactive {
+    display: none;
+}
+
+.item {
+    font-family: monospace;
+    font-size: 2rem;
+    margin: 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+@media screen and (max-width: 700px) {
+
+    .box {
+        margin-bottom: 80px;
+    }
+
+    .box input {
+        font-size: 2rem;
+    }
+
+    .active {
+        left: 40px;
+        top: 500px;
+    }
+
+    .item {
+        font-size: 1.7rem;
+    }
+}
